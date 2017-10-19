@@ -30,7 +30,7 @@ if [ $(id -u) != "0" ];then
 fi  
 
 ##安装编译工具及库文件
-echo"开始安装编译工具及库文件"
+echo"start to install gcc..."
 for i in gcc gcc-c++ make autoconf libtool-ltdl-devel gd-devel freetype-devel libxml2-devel \
                    libjpeg-devel libpng-devel openssl-devel curl-devel bison patch unzip libmcrypt-devel \
                    libmhash-devel ncurses-devel sudo bzip2 flex libaio-devel wget
@@ -40,7 +40,7 @@ done
 
 ##安装cmake编译器
 rm -rf /tmp/cmake-3.1.1.tar.gz
-echo"开始下载cmake-3.1.1.tar.gz"
+echo"start to download cmake-3.1.1.tar.gz"
 
 wget http://www.cmake.org/files/v3.1/cmake-3.1.1.tar.gz -P /tmp  
      if(( $? == 0 ))  
@@ -60,7 +60,7 @@ make && make install
 
 #downMySQL  
  rm -rf /tmp/mysql-5.6.15.tar.gz
- echo"开始下载mysql"
+ echo"start to download mysql"
  wget http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.15.tar.gz -P /tmp   
      if(( $? == 0 ))  
        then   
