@@ -36,6 +36,7 @@ BOOTPROTO=static
 IPADDR=192.168.0.111
 GATEWAY=192.168.0.1
 DNS1=180.76.76.76
+
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/2.png)
 
 Esc :wq退出。
@@ -94,6 +95,7 @@ Installation process语言设置选择英文：
 之后选择默认选择：进行安装
 
 硬盘分区选择第二个选项：guided-use entire and set up lvm
+
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/4.png)
 
 选择默认继续安装，不设置其他
@@ -111,7 +113,7 @@ address 192.168.0.112
 netmask 255.255.0.0
 gateway 192.168.0.1
 Ctrl+x保存退出
-  ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/5.png)
+![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/5.png)
 
  
 设置域名服务器
