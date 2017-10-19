@@ -1,4 +1,4 @@
-Linux/centos和ubuntu安装网络配置和ssh服务开启
+#Linux/centos和ubuntu安装网络配置和ssh服务开启
 Centos7安装，网络配置和ssh服务开启：
 Centos安装
 新建虚拟机
