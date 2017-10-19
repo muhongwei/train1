@@ -37,11 +37,17 @@
 
 ### Centos7网络配置
 登陆之后通过命令行 cd /etc/sysconfig/network-scripts/
+
 vi ifcfg-ens33对配置文件进行设置
+
 将ONBOOT=no 改为yes
+
 BOOTPROTO=static
+
 IPADDR=192.168.0.111
+
 GATEWAY=192.168.0.1
+
 DNS1=180.76.76.76<br>
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/2.png)
 
@@ -50,15 +56,20 @@ Esc :wq退出。
 
 
 ### Centos7 ssh服务配置
+
 执行vi /etc/ssh/sshd_config
 
 将port22 
-  ListenAddress 
-  permitRootlogin yes 
-  passwordAuthentication yes前面#去掉，退出编辑
-使用命令行service sshd start对sshd服务进行开启
-检查sshd是否开启ps –e | grep sshd返回sshd表示开启：
 
+  ListenAddress 
+  
+  permitRootlogin yes 
+  
+  passwordAuthentication yes前面#去掉，退出编辑
+  
+使用命令行service sshd start对sshd服务进行开启
+
+检查sshd是否开启ps –e | grep sshd返回sshd表示开启
 
 打开xshell:输入虚拟机id: 192.168.0.111
 
@@ -83,9 +94,10 @@ Esc :wq退出。
 在虚拟机设备设置中将映像文件导入：
 
 开启虚拟机
-语言设置选择英文：
 
-先择第一项安装：install ubuntu servier:
+语言设置选择英文
+
+先择第一项安装：install ubuntu servier<br>
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/3.png)
 
 Installation process语言设置选择英文：
@@ -97,6 +109,7 @@ Installation process语言设置选择英文：
 选hongkong
  
 之后一直默认进行安装。
+
 设置用户名mhw
 
 确认使用weak password
@@ -114,16 +127,23 @@ Installation process语言设置选择英文：
 ### ubuntu配置网络
 
 输入命令sudo vi /etc/network/interfaces
+
 输入：修改如下
+
 iface ens33 inet static
+
 address 192.168.0.112
+
 netmask 255.255.0.0
+
 gateway 192.168.0.1
+
 Ctrl+x保存退出<br>
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/5.png)
 
  
 设置域名服务器
+
 输入命令sudo vi /etc/resolvconf/resolv.conf.d/base<br>
 ![Image text]( https://raw.githubusercontent.com/muhongwei/train1/master/imgfloder/6.png)
 
@@ -137,6 +157,7 @@ Ctrl+x保存退出<br>
 
 
 打开xshell：
+
 输入网址192.168.0.112
 
 输入用户名：mhw
