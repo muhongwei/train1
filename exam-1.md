@@ -150,11 +150,23 @@
 
 
 ### ubuntu开启ssh服务：
-* 输入"sudo apt-get update"
-
-* 输入"sudo apt-get install openssh-server"-->回车-->输入"y"-->回车-->安装完成。
-
-* 输入"sudo ps -e |grep ssh"-->回车-->有sshd,说明ssh服务已经启动，如果没有启动，输入"sudo service ssh start"-->回车-->ssh服务就会启动
+```
+mhw@ubuntu:~$ sudo apt-get update
+[sudo] password for mhw:
+Hit:1 http://hk.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://hk.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://hk.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Reading package lists... Done
+mhw@ubuntu:~$ sudo apt-get install openssh-server
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+openssh-server is already the newest version (1:7.2p2-4ubuntu2.2).
+0 upgraded, 0 newly installed, 0 to remove and 88 not upgraded.
+mhw@ubuntu:~$ sudo ps -e | grep ssh
+  1140 ?        00:00:00 sshd
+```
 
 * 打开xshell：
 
