@@ -42,7 +42,7 @@
 * 使用命令行service network restart进行网络重启
 * 检查配置是否成功
 ```
-[root@localhost ~]# ip addr
+# ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -54,8 +54,7 @@
     inet 192.168.0.111/16 brd 192.168.255.255 scope global ens33
        valid_lft forever preferred_lft forever
     inet6 fe80::7cf6:8894:e1c:7c34/64 scope link
-       valid_lft forever preferred_lft forever
-[root@localhost ~]# ping www.baidu.com
+# ping www.baidu.com
 PING www.a.shifen.com (180.97.33.107) 56(84) bytes of data.
 64 bytes from 180.97.33.107 (180.97.33.107): icmp_seq=1 ttl=55 time=29.9 ms
 64 bytes from 180.97.33.107 (180.97.33.107): icmp_seq=2 ttl=55 time=29.8 ms
@@ -125,20 +124,20 @@ rtt min/avg/max/mdev = 28.139/28.996/29.991/0.693 ms
 
 ### ubuntu开启ssh服务：
 ```
-mhw@ubuntu:~$ sudo apt-get update
+$ sudo apt-get update
 [sudo] password for mhw:
 Hit:1 http://hk.archive.ubuntu.com/ubuntu xenial InRelease
 Hit:2 http://hk.archive.ubuntu.com/ubuntu xenial-updates InRelease
 Hit:3 http://hk.archive.ubuntu.com/ubuntu xenial-backports InRelease
 Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease
 Reading package lists... Done
-mhw@ubuntu:~$ sudo apt-get install openssh-server
+$ sudo apt-get install openssh-server
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
 openssh-server is already the newest version (1:7.2p2-4ubuntu2.2).
 0 upgraded, 0 newly installed, 0 to remove and 88 not upgraded.
-mhw@ubuntu:~$ sudo ps -e | grep ssh
+$ sudo ps -e | grep ssh
   1140 ?        00:00:00 sshd
 ```
 * 打开xshell：
